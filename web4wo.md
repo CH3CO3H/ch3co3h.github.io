@@ -12,11 +12,17 @@
 
 + 不要使用 `<div>`, 使用 `<section>` 代替;
 + 不要使用`::before` `::after`;
-+ 不要使用`position`;
++ `position`无效;
 + `list-style-type` 无效;
-+ `font-size` 和 `font-size` 无效, 很可能 font 类的属性都无效;
++ `font-shadow` 无效;
++ % 会被转换为 px;
+
+一些建议:
+
 + 对于图片, 我的做法是上传到微博相册;
-+ 建议盒子的宽度用 vw, 高度自适应;
++ 图片居中 `img {left:0;right:0;margin:auto;display:block;}`
++ 盒子的宽度用 vw, 高度自适应;
++ ul {margin-left: 1em;}
 
 ---
 
