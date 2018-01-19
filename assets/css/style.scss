@@ -2,3 +2,19 @@
 ---
 
 @import "{{ site.theme }}";
+
+p,h1,h2,h3,h4,h5 {
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+}
+
+blockquote {
+  font-style: normal;
+}
+
+blockquote p {
+  font-size: 14px;
+}

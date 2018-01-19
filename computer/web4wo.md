@@ -8,13 +8,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 ```
 
-另外还有以下几点: 
+另外还有以下几点:
 
 + 不要使用 `<div>`, 使用 `<section>` 代替;
 + 不要使用`::before` `::after`;
 + `position`无效;
 + `list-style-type` 无效;
-+ `font-shadow` 无效;
 + % 会被转换为 px;
 
 一些建议:
