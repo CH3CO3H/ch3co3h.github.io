@@ -10,7 +10,7 @@
 
 ## Math
 
-1. [Sum of $n$ ](math/sum_of.md)
+1. [正整数 _n_ 的全部约数和](math/sum_of.html)
 
 ## Project
 
