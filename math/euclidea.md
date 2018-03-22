@@ -3,7 +3,7 @@
 
 > 题目来源: Adnroid app _Euclidea_
 
-[toc]
+[TOC]
 
 ## \[1-7] Inscribed Square
 
@@ -30,3 +30,5 @@ A, H, D, I 为圆内接正方形的四顶点.
 解答: 取圆上一点 A, 以小于圆 O 直径的某一距离为半径作圆 A 交圆 O 于 B, C. 以 BC 为半径作圆 C 交圆 A 于 D.
 
 CD 即为圆 O 切线.
+
+![](http://wx1.sinaimg.cn/mw690/b66c1c09ly1fpli8630s7j20u010pwht.jpg)
