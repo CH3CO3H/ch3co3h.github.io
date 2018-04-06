@@ -1,17 +1,20 @@
+---
+layout: home
+---
 # Welcome to my Web Page
 
 ## Computer
 
-1. [How to write web pages for WeChat offical account](computer/web4wo.md)
+1. [How to write web pages for WeChat offical account]({% post_url 2018-03-30-web4wo %})
 
-## Personal
+## Views
 
-1. [About Science](personal/science.md)
+1. [About Science]({% post_url 2018-03-30-science %})
 
 ## Math
 
-1. [正整数 _n_ 的全部约数和](math/sum_of.html)
-2. [Android app _Euclidea_](math/euclidea.md)
+1. [正整数 _n_ 的全部约数和]({% post_url 2018-03-30-sum_of_n %})
+2. [Android app _Euclidea_]({% post_url 2018-03-30-euclidea %})
 
 ## Project
 
