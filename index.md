@@ -10,6 +10,7 @@ layout: home
 ## Views
 
 1. [About Science]({% post_url 2018-03-30-science %})
+2. [尝试解读《我们现在怎样做父亲]({% post_url 2018-04-19-how_we_be_father %})
 
 ## Math
 
