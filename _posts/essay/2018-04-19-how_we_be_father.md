@@ -1,6 +1,7 @@
 ---
 layout: post
 category: views
+title: 尝试解读《我们现在怎样做父亲》
 ---
 # 尝试解读《我们现在怎样做父亲》
 
