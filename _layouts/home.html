@@ -1,37 +1,44 @@
----
-layout: default
----
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+ <body>
 <header>
-  <h1>{{ site.title | default: site.github.repository_name }}</h1>
-  <p>{{ site.description | default: site.github.project_tagline }}</p>
-  <hr>
+	<h1>{{ site.title | default: site.github.repository_name }}</h1>
+	<p>{{ site.description | default: site.github.project_tagline }}</p>
+	<hr>
 </header>
-<div class="home">
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></li>
-  </ul>
-</div>
+<h2>分类</h2>
+<h3>math</h3>
+<ul>
+	{% for post in site.categories.math %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+<h3>cs</h3>
+<ul>
+	{% for post in site.categories.cs %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+<h3>views</h3>
+<ul>
+	{% for post in site.categories.views %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+<h2>项目</h2>
+<ul>
+  <li><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></li>
+  <li><a href="https://github.com/CH3CO3H/go-node">围棋游戏</a></li>
+</ul>
 <footer>
   <p><a href="/links">博客链接</a></p>
   <p class="rss-subscribe">subscribe via <a href="{{ "/feed.json" | relative_url }}">JSON feed</a></p>
 </footer>
+</body>
+</html>
