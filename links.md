@@ -4,21 +4,41 @@ permalink: /links
 # 博客链接
 
 - [胡博靖的技术博客](https://hubojing.github.io/)
-
-- [A Geek's Page](wangcong.org)
-
+- [A Geek's Page](http://wangcong.org)
 - [番茄小窝](https://www.sfantree.com/)
-
 - [ Xu•thus Blog ](https://xxxgitone.github.io/)
-
 - [开源开发工具技术博客](http://www.hellogcc.org/)
-
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
-
 - [当然我在扯淡](http://www.yinwang.org/)
-
 - [廖雪峰的官方网站](https://liaoxuefeng.com/)
-
-- 
-
-   
+- [MOxFIVE](http://moxfive.xyz/)
+- [小忆](http://blog.iiwo.vip/)
+- [Ultron Blog](https://blog.wixy.cn/)
+- [Airing](http://ursb.me/)
+- [Hundred](http://txiner.top/)
+- [二赛君](http://www.ersaijun.cn/)
+- [邱锦锋](http://blog.qiujinfeng.com/)
+- [Waydrow](http://blog.waydrow.com/)
+- [Jrotty](https://qqdie.com/)
+- [Shawn](http://blog.just666.cn/)
+- [水番林](http://www.sfantree.com/)
+- [梦的小窝](https://rm-rf.moe/)
+- [刘毅](http://www.61mon.com/)
+- [ZeeCoder](http://zcheng.ren/)
+- [早茶月光](http://www.zcmol.cn/)
+- [Linux之路](http://rebootcat.com/)
+- [王振镇](https://townwang.com/)
+- [Shawnzeng](https://shawnzeng.com/)
+- [小柒博客](http://blog.52itstyle.com/)
+- [不正经数据科学家](http://frankchen.xyz/)
+- [秦简](http://nolongerwait.com/)
+- [小尾巴](http://xiaowiba.com/)
+- [sopuy](http://sopuy.com/)
+- [技术宅男子](http://itruke.com/)
+- [镜花水月](http://www.5ih5.com.cn/)
+- [PWYQ Space](https://www.pwyqspace.com/)
+- [马攀](https://mapan.tech/)
+- [刘伟](https://darrenliuwei.com/)
+- [w4ctech](http://w4ctech.cn/)
+- [陆恒](http://luheng.online/)
+- [XlnCheng](http://www.wangxc.xyz/)

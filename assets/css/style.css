@@ -4,13 +4,13 @@ body {
 	padding: 0;
 	border: none;
 	height: 100%;
-	overflow-y: hidden;
 	user-select: none;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
+	overflow-y: hidden;
 	writing-mode: vertical-rl;
 	background-color: #000;
 	color: #ddd;
@@ -20,7 +20,11 @@ blockquote {
 	font-size: 14px;
 	color: #000;
 	background-color: #ddd;
-	border-top: 3px solid #333;
+	border-top: 4px solid #333;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
 }
 
 p {
@@ -39,12 +43,24 @@ ol {
 	-webkit-padding-start: 0;
 }
 
+li > p {
+	display: inline;
+}
+
 a {
 	color: yellow;
 }
 
+pre {
+	overflow: scroll;
+}
+
 footer {
 	border: 1px solid skyblue;
+}
+
+table td {
+	border: 1px solid white;
 }
 
 .home-btn {
@@ -56,4 +72,16 @@ footer {
 	border: 2px solid green;
 	border-radius: 3px;
 	background-color: aquamarine;
+}
+
+@media (max-width:480px) {
+	body {
+		writing-mode: initial;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	blockquote {
+		border-top: none;
+		border-left: 4px solid #333;
+	}
 }
