@@ -31,6 +31,12 @@
 	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
+<h3>fun</h3>
+<ul>
+	{% for post in site.categories.fun %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
 <h3>other</h3>
 <ul>
 	{% for post in site.categories.other %}
@@ -39,12 +45,11 @@
 </ul>
 <h2>项目</h2>
 <ul>
-  <li><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></li>
-  <li><a href="https://github.com/CH3CO3H/go-node">围棋游戏</a></li>
+	<li><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></li>
 </ul>
 <footer>
-  <p><a href="/links">博客链接</a></p>
-  <p class="rss-subscribe">subscribe via <a href="{{ "/feed.json" | relative_url }}">JSON feed</a></p>
+	<p><a href="/links">博客链接</a></p>
+	<p class="rss-subscribe">subscribe via <a href="{{ "/feed.json" | relative_url }}">JSON feed</a></p>
 </footer>
 </body>
 </html>

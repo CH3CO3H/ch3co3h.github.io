@@ -3,15 +3,15 @@ body {
 	margin: 0;
 	padding: 0;
 	border: none;
-	height: 100%;
+	/* height: 100%; */
 	user-select: none;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
-	overflow-y: hidden;
-	writing-mode: vertical-rl;
+	/* overflow-y: hidden; */
+	/* writing-mode: vertical-rl; */
 	background-color: #000;
 	color: #ddd;
 }
@@ -20,7 +20,8 @@ blockquote {
 	font-size: 14px;
 	color: #000;
 	background-color: #ddd;
-	border-top: 4px solid #333;
+	/* border-top: 4px solid #333; */
+	border-left: 4px solid #333;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
@@ -65,23 +66,4 @@ table td {
 
 .home-btn {
 	text-align: center;
-}
-
-.home-btn>a {
-	color: #000;
-	border: 2px solid green;
-	border-radius: 3px;
-	background-color: aquamarine;
-}
-
-@media (max-width:480px) {
-	body {
-		writing-mode: initial;
-		overflow-x: hidden;
-		overflow-y: scroll;
-	}
-	blockquote {
-		border-top: none;
-		border-left: 4px solid #333;
-	}
 }
