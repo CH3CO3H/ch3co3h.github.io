@@ -3,21 +3,16 @@ permalink: /links
 ---
 # 博客链接
 
-- [胡博靖的技术博客](https://hubojing.github.io/)
+- [HuoJu's BLOG](https://jhuo.ca/)
 - [A Geek's Page](http://wangcong.org)
 - [番茄小窝](https://www.sfantree.com/)
-- [ Xu•thus Blog ](https://xxxgitone.github.io/)
 - [开源开发工具技术博客](http://www.hellogcc.org/)
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 - [当然我在扯淡](http://www.yinwang.org/)
 - [廖雪峰的官方网站](https://liaoxuefeng.com/)
-- [MOxFIVE](http://moxfive.xyz/)
-- [小忆](http://blog.iiwo.vip/)
-- [Ultron Blog](https://blog.wixy.cn/)
-- [Airing](http://ursb.me/)
+-  [Airing](http://ursb.me/)
 - [Hundred](http://txiner.top/)
 - [二赛君](http://www.ersaijun.cn/)
-- [邱锦锋](http://blog.qiujinfeng.com/)
 - [Waydrow](http://blog.waydrow.com/)
 - [Jrotty](https://qqdie.com/)
 - [Shawn](http://blog.just666.cn/)

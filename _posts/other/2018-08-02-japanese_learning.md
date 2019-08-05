@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 category: other
 title: 日语学习笔记-发音
 ---
