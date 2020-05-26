@@ -3,16 +3,12 @@ body {
 	margin: 0;
 	padding: 0;
 	border: none;
-	/* height: 100%; */
 	user-select: none;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	/* overflow-y: hidden; */
-	/* writing-mode: vertical-rl; */
-	background-color: #000;
+	margin: 0 2.5vw 20px;
+	background-color: #111;
 	color: #ddd;
 }
 
@@ -20,7 +16,6 @@ blockquote {
 	font-size: 14px;
 	color: #000;
 	background-color: #ddd;
-	/* border-top: 4px solid #333; */
 	border-left: 4px solid #333;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
@@ -68,6 +63,11 @@ table td {
 	border: 1px solid white;
 }
 
+header > p {
+	text-align: center;
+}
+
 .home-btn {
+	margin-top: 10px;
 	text-align: center;
 }
