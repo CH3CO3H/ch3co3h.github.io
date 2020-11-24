@@ -1,67 +1,59 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-</head>
- <body>
-<header>
-	<h1>{{ site.title | default: site.github.repository_name }}</h1>
-	<p>{{ site.description | default: site.github.project_tagline }}</p>
-	<hr>
-</header>
-<h2>分类</h2>
-<h3>math</h3>
-<ul>
-	{% for post in site.categories.math %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
-<h3>cs</h3>
-<ul>
-	{% for post in site.categories.cs %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
-<h3>views</h3>
-<ul>
-	{% for post in site.categories.views %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
-<h3>nes</h3>
-<ul>
-	{% for post in site.categories.nes %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
-<h3>fun</h3>
-<ul>
-	{% for post in site.categories.fun %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
-<h3>conversation series</h3>
-<ul>
-	{% for post in site.categories.cvs %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
-<h3>other</h3>
-<ul>
-	{% for post in site.categories.other %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
+---
+layout: default
+title: Home
+---
+<!-- myself -->
+
 <h2>项目</h2>
 <ul>
-	<li><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></li>
+    <li><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></li>
 </ul>
-<footer>
-	<p><a href="/links">博客链接</a></p>
-	<p class="rss-subscribe">subscribe via <a href="{{ "/feed.json" | relative_url }}">JSON feed</a></p>
-</footer>
-</body>
-</html>
+<!-- end myself -->
+{% for post in paginator.posts %}
+
+<div class="post">
+    <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
+    
+    {% if site.data.settings.date-under-post.active %} 
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time> - <i class="far fa-clock"></i> 
+            {% include reading_time.html %}
+        </span>
+    </div>
+    {% endif %}
+
+    {% if site.data.settings.featured-img.active %}
+    <div class = "featured-img-container">
+    {% if post.image %}
+        <a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}"/></a>
+    {% endif %}
+    {% if post.gif %}
+        <a href="{{ post.url | relative_url }}">{% include gif.html file = post.gif %}</a>
+    {% endif %}
+    </div>
+    {% endif %}
+
+    <p>
+        {% if post.customexcerpt %}
+            {{post.customexcerpt | strip_html | truncatewords:50}}
+        {% else %}
+            {{ post.content | strip_html | truncatewords:50 }}
+        {% endif %}
+        <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continue reading...</a></span>
+    </p> 
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class = "paginator">
+    {% if paginator.total_pages > 1 %}
+    {% if paginator.next_page %}
+      <a class = "older paginate-button" href="{{ paginator.next_page_path | relative_url }}">Older Posts</a>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a class = "newer paginate-button" href="{{ paginator.previous_page_path | relative_url }}">Newer Posts</a>
+  {% endif %}
+  {% endif %}
+</div>

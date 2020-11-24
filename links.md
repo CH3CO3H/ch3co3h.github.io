@@ -3,12 +3,18 @@ permalink: /links
 ---
 # 博客链接
 
+## 思想
+
+- [艮曰](https://yinwang1.wordpress.com/)
+- [当然我在扯淡](http://www.yinwang.org/)
+
+## 技术
+
 - [HuoJu's BLOG](https://jhuo.ca/)
 - [A Geek's Page](http://wangcong.org)
 - [番茄小窝](https://www.sfantree.com/)
 - [开源开发工具技术博客](http://www.hellogcc.org/)
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
-- [当然我在扯淡](http://www.yinwang.org/)
 - [廖雪峰的官方网站](https://liaoxuefeng.com/)
 -  [Airing](http://ursb.me/)
 - [Hundred](http://txiner.top/)
@@ -16,7 +22,6 @@ permalink: /links
 - [Waydrow](http://blog.waydrow.com/)
 - [Jrotty](https://qqdie.com/)
 - [Shawn](http://blog.just666.cn/)
-- [水番林](http://www.sfantree.com/)
 - [梦的小窝](https://rm-rf.moe/)
 - [刘毅](http://www.61mon.com/)
 - [ZeeCoder](http://zcheng.ren/)
@@ -31,9 +36,8 @@ permalink: /links
 - [sopuy](http://sopuy.com/)
 - [技术宅男子](http://itruke.com/)
 - [镜花水月](http://www.5ih5.com.cn/)
-- [PWYQ Space](https://www.pwyqspace.com/)
 - [马攀](https://mapan.tech/)
-- [刘伟](https://darrenliuwei.com/)
-- [w4ctech](http://w4ctech.cn/)
-- [陆恒](http://luheng.online/)
-- [XlnCheng](http://www.wangxc.xyz/)
+
+## 知识
+
+- [非常医学生](https://www.cunzher.cn/)

@@ -1,7 +1,34 @@
----
-layout: default
----
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
 
-{{ content }}
+<body>
 
-{% include footer.html %}
+  <div class="container">
+    {% include header.html %}
+
+    <div class="post-container">
+      <article id = "post">
+        <h2 id = "post-title">{{ page.title }}</h2>
+
+  {% if site.data.settings.date-under-post.active %}
+  <div class = "post-info">
+    <span>
+        <i class="far fa-calendar" aria-hidden="true"></i> <span>{{ page.date | date_to_string }}</span>
+    </span>
+  </div>
+  {% endif %}
+        {{ content }}
+      </article>
+    </div>
+  </div>
+
+{%- include footer.html -%}
+
+{% if site.data.settings.mathjax.active %}
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,3 @@
+pages:
+  - {name: 'About', url: '/about'}
+  - {name: 'Articles', url: '/categories'}
