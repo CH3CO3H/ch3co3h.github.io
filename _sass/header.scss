@@ -14,7 +14,6 @@ $reddit: #ff4500;
 header{
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
     overflow: hidden;
   
     #site_title{
@@ -33,11 +32,10 @@ header{
         }
     }
     #subheader{
-        display: block;
+        display: flex;
+        justify-content: space-between;
         margin-top: 15px;
             .pages{
-                display: block;
-                float: left;
                 a:hover{
                     color: black;
                 }
@@ -49,8 +47,6 @@ header{
                 }
             }
             .social{
-                display: block;
-                float: right;
                 i{
                     margin-right: 3px;
                     -o-transition: .5s;

@@ -3,13 +3,17 @@ $base: #a2a2a2;
 $light-grey: #ebebeb;
 
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
 }
 html{
   scroll-behavior: smooth;
 }
+
+table {
+  border: 2px solid;
+}
+
 .container {
     margin-left: 8rem;
     margin-right: 8rem;
@@ -133,3 +137,76 @@ blockquote {
   text-decoration: underline;
 }
 //End Archive
+@media (max-width: 768px) {
+.container {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	user-select: none;
+}
+
+body {
+	margin: 0 2.5vw 20px;
+}
+
+blockquote {
+	font-size: 14px;
+	background-color: #ddd;
+	border-left: 4px solid #333;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+img {
+	max-height: 100%;
+}
+
+ul,
+ol {
+	list-style-position: inside;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+
+li > p {
+	display: inline;
+}
+
+pre {
+	overflow: scroll;
+}
+
+footer {
+	border: 1px solid skyblue;
+}
+
+table td {
+	border: 1px solid;
+}
+
+header > p {
+	text-align: center;
+}
+
+.home-btn {
+	margin-top: 10px;
+	text-align: center;
+}
