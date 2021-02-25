@@ -1,37 +1,38 @@
 <!doctype html>
 <html>
-  <head>
-    {% include head.html %}
-  </head>
+	<head>
+		<title>{{ page.title }} | {{site.title }}</title>
+		{% include head.html %}
+		<link rel="stylesheet" href="/assets/css/post.css">
+	</head>
 
 <body>
 
-  <div class="container">
-    <div class="post-container">
-      <article id = "post">
-        <h1 id = "post-title">{{ page.title }}</h1>
-  <div class = "post-info">
-    <span>
-        <i class="far fa-calendar" aria-hidden="true"></i> <span>{{ page.date | date_to_string }}</span>
-    </span>
-  </div>
-        {{ content }}
-      </article>
-    </div>
-  </div>
+	<div class="container">
+		<div class="post-container">
+			<article id = "post">
+				<div class = "post-info">
+					<span>
+							<i class="far fa-calendar" aria-hidden="true"></i> <span>{{ page.date | date_to_string }}</span>
+					</span>
+				</div>
+				{{ content }}
+			</article>
+		</div>
+	</div>
 
 {%- include footer.html -%}
 
 {% for tag in  page.tags %}
 {% if tag=="mermaid" %}
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-  <script>
-  mermaid.initialize({startOnLoad:true});
-  mermaid.init('code.language-mermaid');
-  </script>
+	<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+	<script>
+	mermaid.initialize({startOnLoad:true});
+	mermaid.init('code.language-mermaid');
+	</script>
 {% endif %}
 {% if tag=="mathjax" %}
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 {% endfor %}
 </body>

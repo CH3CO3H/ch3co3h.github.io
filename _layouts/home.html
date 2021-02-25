@@ -1,7 +1,14 @@
 ---
-layout: default
 title: Home
 ---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ site.title }} | {{}} site.description }}</title>
+  {% include head.html %}
+</head>
+<body>
+  <div class="container">
 <header id="header">
 	<div id = site_title>
 		<h1>{{site.title}}</h1>
@@ -9,9 +16,7 @@ title: Home
 	</div>
 	<div id="subheader">
 		<nav class="pages">
-			{% for item in site.data.pages.pages %}
-			<a href="{{ item.url }}">{{ item.name }}</a>
-			{% endfor %}
+			<a href="/about">About</a>
 		</nav>
 		<nav class="social">
 			{% for item in site.data.social.social %}
@@ -25,5 +30,22 @@ title: Home
 		</nav>
 	</div>
 </header>
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <h2 class="archive-cat">{{ category_name }}</h2>
+    <a name="{{ category_name | slugize }}"></a>
+    <ul>
+    {% for post in site.categories[category_name] %}
+      <li><a class="archive-link" href="{{ post.url | relative_url}}">{{post.title}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
 <h2>项目</h2>
 <p><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></p>
+</div>
+{%- include footer.html -%}
+</body>
+</html>
