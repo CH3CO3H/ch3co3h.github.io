@@ -1,0 +1,34 @@
+---
+layout: default
+permalink: /all
+---
+
+<section id="categories" class="categories">
+{% for category in site.categories %}
+	<li>{{ category | first }}</li>
+{% endfor %}
+</section>
+
+<section id="all">
+{% for category in site.categories %}
+{% capture category_name %}{{ category | first }}{% endcapture %}
+<ul id="{{ category_name }}">
+{% for post in site.categories[category_name] %}
+	<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
+</section>
+<!-- {% for category in site.categories %}
+  <div class="archive-group">
+	{% capture category_name %}{{ category | first }}{% endcapture %}
+	<div id="#{{ category_name | slugize }}"></div>
+	<h2 class="archive-cat">{{ category_name }}</h2>
+	<a name="{{ category_name | slugize }}"></a>
+	<ul>
+	{% for post in site.categories[category_name] %}
+	  <li><a class="archive-link" href="{{ post.url | relative_url}}">{{post.title}}</a></li>
+	{% endfor %}
+	</ul>
+  </div>
+{% endfor %} -->

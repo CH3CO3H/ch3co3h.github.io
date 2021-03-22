@@ -10,7 +10,7 @@ title: 我和妹子解九连环思路的不同
 
 最开始我是给妹子讲解如何把解九连环的步骤用算法的方式表示出来，首先要考虑大步骤。我自己的想法是从 1 到 n 的顺序，每一步解两个环。如果总共有奇数个环，则从 1 开始解，偶数则从 0 开始。当然九连环属于奇数，即这种方式：
 
-![](https://wx4.sinaimg.cn/large/b66c1c09ly1go8bi72bwaj20b40ci0t4.jpg)
+![](https://i.loli.net/2021/03/05/vFT9xBIJjKwaG4L.jpg)
 
 ```
 solve (n)
@@ -21,7 +21,7 @@ solve (n)
 
 而妹子考虑的大步骤是从 9 到 1 的顺序，是这样的：
 
-![](https://wx4.sinaimg.cn/large/b66c1c09ly1go8bib1cjej20b40cigm8.jpg)
+![nine-ring-she.jpg](https://i.loli.net/2021/03/05/nLEjCGdo94wiTKl.jpg)
 
 ```
 solve (n)

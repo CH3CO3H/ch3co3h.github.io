@@ -4,48 +4,23 @@ title: Home
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{{ site.title }} | {{ site.description }}</title>
-  {% include head.html %}
+	<title>AIUR | Cogito ergo sum</title>
+{% include head.html %}
+	<link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
-  <div class="container">
 <header id="header">
 	<div id = site_title>
 		<h1>{{site.title}}</h1>
 		<h2>{{ site.description }}</h2>
 	</div>
-	<div id="subheader">
-		<nav class="pages">
-			<a href="/about">About</a>
-		</nav>
-		<nav class="social">
-			{% for item in site.data.social.social %}
-				{% if item.type == "brand"%}
-				<a href="{{ item.link }}" target="_blank" id="{{item.icon}}"><i class="fab fa-{{item.icon}}" aria-hidden="true"></i></a>
-				{% endif %}
-				{% if item.type == "solid"%}
-				<a href="{{ item.link }}" target="_blank" id="{{item.icon}}"><i class="fas fa-{{item.icon}}" aria-hidden="true"></i></a>
-				{% endif %} 
-			{% endfor %}
-		</nav>
-	</div>
 </header>
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <h2 class="archive-cat">{{ category_name }}</h2>
-    <a name="{{ category_name | slugize }}"></a>
-    <ul>
-    {% for post in site.categories[category_name] %}
-      <li><a class="archive-link" href="{{ post.url | relative_url}}">{{post.title}}</a></li>
-    {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
-<h2>项目</h2>
-<p><a href="https://github.com/CH3CO3H/wuhyu">双注输入法</a></p>
-</div>
-{%- include footer.html -%}
+<nav>
+	<li></li>
+	<li><a href="/all">全部文章</a></li>
+	<li><a href="/prj">个人项目</a></li>
+	<li><a href="/links">Links</a></li>
+	<li><a href="/about">About</a></li>
+</nav>
 </body>
 </html>

@@ -1,0 +1,41 @@
+body {
+	padding-top: 80px;
+	/* background-image: url(https://i.loli.net/2021/03/17/Y9J2tpflnHX7Ub4.jpg); */
+	background-image: url(https://ftp.bmp.ovh/imgs/2021/03/48a4e936dc3c9128.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+header {
+	max-width: fit-content;
+	transform-style: flat;
+	transform: perspective(200px) rotateY(20deg) rotate(7deg);
+	margin-left: 60px;
+	text-shadow: 3px 3px orange;
+	margin-bottom: 30px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+	width: fit-content;
+}
+
+nav > li {
+	display: initial;
+	height: 55px;
+	padding: 0 30px;
+	margin-bottom: 20px;
+	background-color: #333;
+	box-shadow: -3px 4px #ccc;
+	line-height: 55px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+nav > li > a {
+	text-decoration: none;
+	color: burlywood;
+}
