@@ -1,0 +1,21 @@
+footer {
+	position: fixed;
+	right: 20px;
+	bottom: 15px;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	font-size: 45px;
+	text-align: center;
+}
+footer > a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid lightskyblue;
+}
+
+footer > a:hover {
+	background-color: lightskyblue;
+	color: #1D301D;
+} 

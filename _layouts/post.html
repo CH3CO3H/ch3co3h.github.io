@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+	<link rel="stylesheet" href="/assets/css/post.css">
+	<link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+<body>
+	<div class="container">
+		<main>
+{{ content }}
+		</main>
+		<aside class="info">
+			<h3>文档信息</h3>
+			<p>发表日期：{{ page.date | date_to_string }}</p>
+{% if page.modifiy %}
+			<p>修改日期：{{ page.modify }}</p>
+{% endif %}
+			<p>LICENSE: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.en" >CC-BY-NC-SA 3.0</a></p>
+{% if page.pic %}
+			<p><a href="{{ page.picaddress }}">图片来源：{{ page.pic }}</a></p>
+			<p><a href="{{ page.picowneraddress }}">图片所有者：{{ page.picowner }}</a></p>
+			<p><a href="{{ page.piclicenseaddress }}">图片授权协议：{{ page.piclicense }}</a></p>
+{% endif %}
+			<hr>
+			<h3>Read this elsewhere</h3>
+{% if page.writeas %}
+			<p><a href="{{ page.writeas }}">Write.as</a></p>
+{% endif %}
+{% if page.bilibili %}
+			<p><a href="{{ page.bilibili }}">Bilibili</a></p>
+{% endif %}
+{% if page.zhihu %}
+			<p><a href="{{ page.zhihu }}">Zhihu</a></p>
+{% endif %}
+{% if page.jianshu %}
+			<p><a href="{{ page.jianshu }}">Jianshu</a></p>
+{% endif %}
+		</aside>
+	</div>
+{% include footer.html %}
+
+{% for tag in  page.tags %}
+{% if tag=="mermaid" %}
+	<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+	<script>
+	mermaid.initialize({startOnLoad:true});
+	mermaid.init('code.language-mermaid');
+	</script>
+{% endif %}
+{% if tag=="mathjax" %}
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}
+{% endfor %}
+</body>
+</html>
