@@ -1,8 +1,10 @@
 ---
-title: 
+title: 写数学公式的麻烦
 category: casual
 layout: post
-tag: mathjax
+mathjax: true
+eget: https://mp.weixin.qq.com/s?__biz=MzI5MjIwODM0OQ==&mid=2651868845&idx=1&sn=8c7427fa4103b22902b7d3e7adb9a19d&chksm=f7e0051fc0978c09118570e21bd6c9bff5f7bf136ba197614011d0b56c8d2561629989ab4ec8&token=332977848&lang=zh_CN#rd
+writee: https://writee.org/ch3co3h/xie-shu-xue-gong-shi-de-ma-fan
 ---
 
 # 写数学公式的麻烦
@@ -10,10 +12,12 @@ tag: mathjax
 学过电磁学的人应该都见过 Maxwell's equations:
 
 $$
-\nabla \times \mathbf H =\mathbf J+\frac{\partial \mathbf D}{\partial t}\\
-\nabla \times \mathbf D=-\frac{\partial \mathbf B}{\partial t}\\
-\nabla \cdot \mathbf B=0\\
+\begin{align}
+\nabla \times \mathbf H =\mathbf J+\frac{\partial \mathbf D}{\partial t}\newline
+\nabla \times \mathbf D=-\frac{\partial \mathbf B}{\partial t}\newline
+\nabla \cdot \mathbf B=0\newline
 \nabla \cdot \mathbf D=\rho
+\end{align}
 $$
 
 这个方程组用笔在纸上写还算容易，但如果要展现在电子文档或者网页中，就梢显麻烦。几乎所有的数学方程式写起来都很麻烦。如果只是单行结构，只靠插入特殊符号勉强可以解决，但稍微立体化的形式，比如一个分式，就不太容易。正因如此，我们偶尔会看到用对勾符号来代替根号的情形，就像这样：
@@ -28,11 +32,13 @@ $$
 
 但要表现出比较完美的数学公式，就要费一番相当麻烦的额外工夫。比如上面那个 Maxwell's equations，在我的 Markdown 编辑器 MarkText 里，使用 latex 语法，源代码是这样的：
 
-```
+```latex
+\begin{align}
 \nabla \times \mathbf H =\mathbf J+\frac{\partial \mathbf D}{\partial t}\\
 \nabla \times \mathbf D=-\frac{\partial \mathbf B}{\partial t}\\
 \nabla \cdot \mathbf B=0\\
 \nabla \cdot \mathbf D=\rho
+\end{align}
 ```
 
 在数学公式处理软件 LibreOffice Math 里，源代码是这样的：

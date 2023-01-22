@@ -3,6 +3,7 @@ title: 缺乏常识
 category: casual
 layout: post
 writeas: https://write.as/ch3co3h/que-fa-chang-shi
+eget: https://mp.weixin.qq.com/s?__biz=MzI5MjIwODM0OQ==&mid=2651868699&idx=1&sn=276b919ea76970c7db4a5e9ec0e5f333&chksm=f7e005a9c0978cbf61397b5c91e4b46ed28984bf6bf6f187d26e6256942a711125c59a5c204e&token=332977848&lang=zh_CN#rd
 ---
 
 # 缺乏常识

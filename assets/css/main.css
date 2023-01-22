@@ -74,8 +74,17 @@ table {
 	border: 2px solid;
 }
 
- table td {
+table td {
 	border: 1px solid;
+}
+
+pre {
+	overflow: scroll;
+}
+
+mjx-math {
+	display: block;
+	overflow: scroll;
 }
 
 @media (max-width: 480px) {

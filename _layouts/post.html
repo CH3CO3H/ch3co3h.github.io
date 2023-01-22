@@ -12,33 +12,38 @@
 		</main>
 		<aside class="info">
 			<h3>文档信息</h3>
-			<p>发表日期：{{ page.date | date_to_string }}</p>
+			<li>发表日期：{{ page.date | date_to_string }}</li>
 {% if page.modifiy %}
-			<p>修改日期：{{ page.modify }}</p>
+			<li>修改日期：{{ page.modify }}</li>
 {% endif %}
-			<p>LICENSE: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.en" >CC-BY-NC-SA 3.0</a></p>
+			<li>LICENSE: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.en" >CC-BY-NC-SA 3.0</a></li>
 {% if page.pic %}
-			<p><a href="{{ page.picaddress }}">图片来源：{{ page.pic }}</a></p>
-			<p><a href="{{ page.picowneraddress }}">图片所有者：{{ page.picowner }}</a></p>
-			<p><a href="{{ page.piclicenseaddress }}">图片授权协议：{{ page.piclicense }}</a></p>
+			<li><a href="{{ page.picaddress }}">图片来源：{{ page.pic }}</a></li>
+			<li><a href="{{ page.picowneraddress }}">图片所有者：{{ page.picowner }}</a></li>
+			<li><a href="{{ page.piclicenseaddress }}">图片授权协议：{{ page.piclicense }}</a></li>
 {% endif %}
 			<hr>
 			<h3>Read this elsewhere</h3>
+			<ul>
+{% if page.eget %}
+			<li><a href="{{ page.eget }}">公众号 eGet</a></li>
+{% endif %}
 {% if page.writeas %}
-			<p><a href="{{ page.writeas }}">Write.as</a></p>
+			<li><a href="{{ page.writeas }}">Write.as</a></li>
 {% endif %}
 {% if page.writee %}
-			<p><a href="{{ page.writee }}">Writee</a></p>
+			<li><a href="{{ page.writee }}">Writee</a></li>
 {% endif %}
 {% if page.bilibili %}
-			<p><a href="{{ page.bilibili }}">Bilibili</a></p>
+			<li><a href="{{ page.bilibili }}">Bilibili</a></li>
 {% endif %}
 {% if page.zhihu %}
-			<p><a href="{{ page.zhihu }}">Zhihu</a></p>
+			<li><a href="{{ page.zhihu }}">Zhihu</a></li>
 {% endif %}
 {% if page.jianshu %}
-			<p><a href="{{ page.jianshu }}">Jianshu</a></p>
+			<li><a href="{{ page.jianshu }}">Jianshu</a></li>
 {% endif %}
+			</ul>
 		</aside>
 	</div>
 {% include footer.html %}
@@ -50,16 +55,6 @@
 	mermaid.initialize({startOnLoad:true});
 	mermaid.init('code.language-mermaid');
 	</script>
-{% endif %}
-{% if tag=="mathjax" %}
-	<script>
-	MathJax = {
-	  tex: {
-		inlineMath: [['$', '$'], ['\\(', '\\)']]
-	  }
-	};
-	</script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 {% endfor %}
 </body>

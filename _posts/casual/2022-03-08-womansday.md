@@ -3,6 +3,8 @@ title: 旗帜鲜明反对称「妇女节」为「女神节」
 category: casual
 layout: post
 writeas: https://write.as/ch3co3h/qi-zhi-xian-ming-fan-dui-cheng-fu-nu-jie-wei-nu-shen-jie
+writee: https://writee.org/ch3co3h/qi-zhi-xian-ming-fan-dui-cheng-fu-nu-jie-wei-nu-shen-jie
+eget: https://mp.weixin.qq.com/s?__biz=MzI5MjIwODM0OQ==&mid=2651868641&idx=1&sn=8a408042d6daf2d30ff32665daf41fe3&chksm=f7e00653c0978f45755be436e6c9554d22235e1bc428f95245dfe841d0d513cd76c604397b9e&token=332977848&lang=zh_CN#rd
 ---
 
 # 旗帜鲜明反对称「妇女节」为「女神节」
