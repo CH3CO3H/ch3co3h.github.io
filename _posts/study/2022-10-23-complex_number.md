@@ -2,7 +2,9 @@
 title: 复数概念的另一种引入方式
 category: study
 layout: post
-tags: mathjax
+mathjax: true
+eget: https://mp.weixin.qq.com/s?__biz=MzI5MjIwODM0OQ==&mid=2651868822&idx=1&sn=603be5003dd2fc8ec833e128d9a36e70&chksm=f7e00524c0978c327c0419c3b07f5db325ef311794da5d888312120ba950faada09d72121e51&token=332977848&lang=zh_CN#rd
+writee: https://writee.org/ch3co3h/fu-shu-gai-nian-de-ling-chong-yin-ru-fang-shi
 ---
 
 # 复数概念的另一种引入方式
