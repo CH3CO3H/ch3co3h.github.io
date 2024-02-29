@@ -5,6 +5,7 @@ layout: post
 category: book
 date: 2023-07-16
 writee: https://writee.org/ch3co3h/huang-jin-shi-dai-du-hou-gan
+github: https://ch3co3h.github.io/book/golden_time.html
 ---
 
 # 《黄金时代》读后感
